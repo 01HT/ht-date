@@ -21,9 +21,9 @@ class HTDate extends LitElement {
 
   set data(timestamp) {
     this.date = timestamp.toDate().toLocaleString("ru", {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+      year: "numeric",
+      month: "long",
+      day: "numeric"
     });
   }
 }
