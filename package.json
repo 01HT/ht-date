@@ -1,10 +1,10 @@
 {
-  "name": "ht-date",
+  "name": "@01ht/ht-date",
   "version": "1.0.0",
   "main": "ht-date.js",
-  "repository": "https://github.com/maksimyurkov/ht-date",
-  "author": "maksimyurkov <yurkov.maksim.sergeevich@gmail.com>",
-  "license": "MIT",
+  "repository": "01ht/ht-date",
+  "author": "01ht Ltd",
+  "license": "UNLICENSED",
   "dependencies": {
     "@polymer/lit-element": "^0.5.1"
   }
