@@ -1,11 +1,11 @@
 {
   "name": "@01ht/ht-date",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "ht-date.js",
   "repository": "01ht/ht-date",
-  "author": "01ht Ltd",
+  "author": "01HT Ltd",
   "license": "UNLICENSED",
   "dependencies": {
-    "@polymer/lit-element": "^0.5.1"
+    "@polymer/lit-element": "^0.6.1"
   }
 }

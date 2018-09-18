@@ -2,7 +2,8 @@
 import { LitElement, html } from "@polymer/lit-element";
 
 class HTDate extends LitElement {
-  _render({ date }) {
+  render() {
+    const { date } = this;
     return html`
     ${date}
 `;
@@ -14,12 +15,13 @@ class HTDate extends LitElement {
 
   static get properties() {
     return {
-      data: String,
-      date: String
+      data: { type: String },
+      date: { type: String }
     };
   }
 
   set data(timestamp) {
+    if (timestamp === undefined) return;
     this.date = timestamp.toDate().toLocaleString("ru", {
       year: "numeric",
       month: "long",
