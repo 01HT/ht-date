@@ -15,14 +15,20 @@ class HTDate extends LitElement {
 
   static get properties() {
     return {
-      data: { type: String },
+      data: { type: Object },
       date: { type: String }
     };
   }
 
   set data(timestamp) {
     if (timestamp === undefined) return;
-    this.date = timestamp.toDate().toLocaleString("ru", {
+    if (timestamp.toDate === undefined) {
+      let seconds = timestamp.seconds || timestamp._seconds;
+      timestamp = new Date(+`${seconds}000`);
+    } else {
+      timestamp = timestamp.toDate();
+    }
+    this.date = timestamp.toLocaleString("ru", {
       year: "numeric",
       month: "long",
       day: "numeric"
