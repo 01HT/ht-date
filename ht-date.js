@@ -1,5 +1,5 @@
 "use strict";
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 
 class HTDate extends LitElement {
   render() {
@@ -7,10 +7,6 @@ class HTDate extends LitElement {
     return html`
     ${date}
 `;
-  }
-
-  static get is() {
-    return "ht-date";
   }
 
   static get properties() {
@@ -36,4 +32,4 @@ class HTDate extends LitElement {
   }
 }
 
-customElements.define(HTDate.is, HTDate);
+customElements.define("ht-date", HTDate);
